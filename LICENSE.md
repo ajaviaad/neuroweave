@@ -10,3 +10,5 @@ Redistribution of modified weights
 Use of modified components in derivative or competitive models
 
 For licensing inquiries, please contact: hello@neuronmix.com.
+
+© 2025 Neuronmix. All rights reserved.
