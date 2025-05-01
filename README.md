@@ -46,6 +46,8 @@ state_dict = load_file("model-00001-of-00003.safetensors", device=device)
 model.load_state_dict(state_dict)
 ```
 
-## Note
+## Note on Architecture Modification
 
-Neuroweave is a custom transformer variant derived from an open-source Mistral base. It features a complete patching of all MLP activations with the novel AutoMixedActivation module and has undergone substantial architectural modifications and gradient-based weight transformations across all layers. As a result, the current model exhibits distinct behavior and is functionally decoupled from the original pretrained variant.
+This model introduces a fully patched MLP architecture over the Mistral base, replacing all original activation functions with the custom AutoMixedActivation, a fusion of ReLU and SiLU. Corresponding weight gradients and safetensors partitions have been updated across layers (down_proj, gate_proj, up_proj), resulting in a substantially modified model distinct from the original.
+
+Weight changes are reflected in: model.layers.*.mlp.*.weight across all shards (model-00001/02/03-of-00003.safetensors).
