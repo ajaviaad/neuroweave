@@ -18,6 +18,6 @@ Mistral-7B (by Mistral AI), licensed under the Apache License 2.0
 
 Modifications and derivative work:
 
-Neuroweave (by NeuronMix), licensed under the same or compatible license with clear attribution of modifications.
+Neuroweave (by Muhammad Adeel Javaid), licensed under custom license with clear attribution of modifications.
 
 This model no longer distributes Mistral's original weights, but modified weights generated via alternate computation pathways.
