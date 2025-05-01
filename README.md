@@ -48,6 +48,4 @@ model.load_state_dict(state_dict)
 
 ## Note on Architecture Modification
 
-This model introduces a fully patched MLP architecture over the Mistral base, replacing all original activation functions with the custom AutoMixedActivation, a fusion of ReLU and SiLU. Corresponding weight gradients and safetensors partitions have been updated across layers (down_proj, gate_proj, up_proj), resulting in a substantially modified model distinct from the original.
-
-Weight changes are reflected in: model.layers.*.mlp.*.weight across all shards (model-00001/02/03-of-00003.safetensors).
+This model is a heavily modified derivative of Mistral-7B. It introduces a novel AutoMixedActivation mechanism and customized transformer behavior with proven architectural and gradient-level differences. While based on open-source foundations, the resulting model behavior, weights, and activation logic reflect a distinct innovation.
