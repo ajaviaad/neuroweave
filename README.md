@@ -49,3 +49,5 @@ model.load_state_dict(state_dict)
 ## Note on Architecture Modification
 
 This model is a heavily modified derivative of Mistral-7B. It introduces a novel AutoMixedActivation mechanism and customized transformer behavior with proven architectural and gradient-level differences. While based on open-source foundations, the resulting model behavior, weights, and activation logic reflect a distinct innovation.
+
+Neuroweave is no longer distributing the original Mistral weights. The model incorporates architectural modifications and altered activations, resulting in derivative weights generated through modified computation. As a result, Neuroweave weights are no longer bitwise identical to those of Mistral.
