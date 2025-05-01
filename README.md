@@ -1,6 +1,6 @@
-# Neuroweave: Transformer with AutoMixed Activations
+# Neuroweave: Transformer with Custom Activations
 
-Neuroweave is a fully custom transformer model architecture utilizing dynamic activation routing across all feed-forward (MLP) blocks. Each block mixes multiple nonlinearities (ReLU, GELU, Swish, Sigmoid) at the neuron level, enhancing gradient diversity and representational power.
+Neuroweave is a fully custom transformer model architecture utilizing dynamic activation routing across all feed-forward (MLP) blocks. Each block custom activation at the neuron level, enhancing gradient diversity and representational power.
 
 ## Key Features
 
