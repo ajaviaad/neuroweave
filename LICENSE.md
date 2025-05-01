@@ -12,11 +12,11 @@ Non-bitwise-identical weights due to post-training modification
 
 As a result, the Neuroweave model does not retain the original weight values or behaviors of Mistral and is considered an independently evolved model.
 
-Original base model:
+## Original base model:
 
 Mistral-7B (by Mistral AI), licensed under the Apache License 2.0
 
-Modifications and derivative work:
+## Modifications and derivative work:
 
 Neuroweave (by Muhammad Adeel Javaid), licensed under custom license with clear attribution of modifications.
 
