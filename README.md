@@ -16,12 +16,14 @@ Neuroweave is a fully custom transformer model architecture utilizing dynamic ac
 neuroweave/
 ├── config.json                   # Model architecture config
 ├── generation_config.json       # Optional decoding parameters
-├── model-00001-of-00003.safetensors  # Sharded model weights
+├── model-00001-of-00006.safetensors  # Sharded model weights
 ├── model.safetensors.index.json      # Shard index map
 ├── tokenizer.model              # SentencePiece tokenizer model
 ├── tokenizer.json               # Tokenizer config
 ├── special_tokens_map.json      # Special token settings
 ├── added_tokens.json            # Custom token list
+├── tokenizer_config.json        # Tokenizer metadata
+├── modeling_auto.py             # Custom model logic 
 ```
 
 The hidden layer is split evenly, each segment passed through one activation, then concatenated. This creates highly expressive per-neuron behavior and improves learning dynamics.
