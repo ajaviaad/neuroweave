@@ -28,7 +28,7 @@ This is applied **only during inference**, and the model remains fully compatibl
 
 ---
 
-## 🔧 Usage
+## Usage
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -44,7 +44,7 @@ for layer in model.model.layers:
 
 ---
 
-## 🧪 Performance
+## Performance
 
 Empirical prompt testing shows:
 - Better contextuality
@@ -55,7 +55,7 @@ All achieved without any additional training.
 
 ---
 
-## 📁 Files
+## Files
 
 - `modeling_auto.py` — defines the AutoMixedActivation
 - `config.json` — config compatible with Hugging Face loading
@@ -63,6 +63,6 @@ All achieved without any additional training.
 
 ---
 
-## 🤝 License
+## License
 
 This work is released under the Apache 2.0 License (see LICENSE.md).
