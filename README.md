@@ -4,7 +4,7 @@ Neuroweave is a transformer variant based on [Mistral-7B](https://huggingface.co
 
 ---
 
-## 🔍 Key Differences from Mistral
+## Key Differences from Mistral
 
 | Feature               | Mistral              | Neuroweave               |
 |----------------------|----------------------|---------------------------|
@@ -15,7 +15,7 @@ Neuroweave is a transformer variant based on [Mistral-7B](https://huggingface.co
 
 ---
 
-## 🧠 AutoMixedActivation
+## AutoMixedActivation
 
 Instead of using a single activation, the hidden dimension is split into chunks and each chunk is passed through a different function (ReLU, GELU, Swish).
 
