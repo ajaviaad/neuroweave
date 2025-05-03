@@ -17,4 +17,4 @@ These methods have demonstrated measurable changes in output behavior and gradie
 
 All rights to the design and runtime manipulation technique are reserved by the NeuronMix Team. Use outside of this repository for commercial or derivative projects requires explicit written permission.
 
-© 2024 NeuronMix Team
+© 2025 NeuronMix Team
