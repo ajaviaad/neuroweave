@@ -1,7 +1,7 @@
 
-# 🧠 NeuronMix: Runtime-Injected Transformer Variant with Custom Activation
+# Neuroweave
 
-**NeuronMix** introduces a novel Transformer variant built on top of Mistral-7B, using a patent-pending custom activation function, `AutoMixedActivation`, that dynamically applies different nonlinearities across neuron groups. Unlike traditional activation changes, this is applied **at runtime** via forward-pass patching — no retraining, no weight edits.
+**Neuroweave** introduces a novel Transformer variant built on top of Mistral-7B, using a patent-pending custom activation function, `AutoMixedActivation`, that dynamically applies different nonlinearities across neuron groups. Unlike traditional activation changes, this is applied **at runtime** via forward-pass patching — no retraining, no weight edits.
 
 ## 🚀 Key Highlights
 
