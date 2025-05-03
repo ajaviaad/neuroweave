@@ -1,6 +1,6 @@
 # Neuroweave: Full-Stack Transformer Variant with AutoMixedActivation
 
-**Neuroweave** is a custom Transformer variant built on top of Mistral-7B, created by the NeuronMix Team. It introduces a proprietary activation function, `AutoMixedActivation`, applied not only at the embedding level but also in **every transformer layer**. This results in a fundamentally different behavior from baseline models — leading to significantly reduced plagiarism, greater content originality, and more dynamic generation.
+**Neuroweave** is a custom Transformer variant built on top of Mistral-7B, created by the NeuronMix Team. It introduces a proprietary activation function, `AutoMixedActivation`, applied not only at the embedding level but also in **every transformer layer**. This results in a fundamentally different behavior from baseline models — leading to more dynamic generation.
 
 ## Key Highlights
 
