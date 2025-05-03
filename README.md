@@ -22,7 +22,6 @@ This hybrid activation combines the sharp feature sensitivity of `SiLU` with the
 
 - 32 `[HOOK] AutoMixedActivation called.` logs confirm full-layer integration.
 - Input and hidden state norms propagate differently vs. SiLU baseline, indicating altered flow.
-- Empirical plagiarism analysis shows up to **80% novel content generation**, drastically improving originality.
 - Generation exhibits greater contextual flexibility, nuance, and reduced memorization bias.
 
 ## Deployment
