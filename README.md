@@ -36,8 +36,8 @@ It mixes ReLU, GELU, and Swish across channel chunks, allowing more expressive n
 
 ## 📦 Deployment
 
-Runs from Google Drive with custom transformers and patched `modeling.py`.
-Zero cloud cost, zero dependency on HuggingFace servers.
+Runs with custom transformers and patched `modeling.py`.
+Zero dependency on HuggingFace servers.
 
 ---
 
