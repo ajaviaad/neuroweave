@@ -41,4 +41,4 @@ Zero cloud cost, zero dependency on HuggingFace servers.
 
 ---
 
-© 2024 NeuronMix Team. Custom activation and modified runtime behavior are proprietary.
+© 2025 NeuronMix Team. Custom activation and modified runtime behavior are proprietary.
