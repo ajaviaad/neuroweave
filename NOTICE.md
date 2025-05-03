@@ -1,13 +1,13 @@
 
-# 📣 NOTICE: Patent Pending
+# NOTICE: Patent Pending
 
 This repository includes proprietary techniques developed by the **NeuronMix Team**, specifically:
 
-## 🔧 AutoMixedActivation
+## AutoMixedActivation
 
 A novel activation module that dynamically applies multiple nonlinearities (e.g., ReLU, GELU, Swish) to partitioned sections of the hidden dimension. It supports both 3D ([B, T, C]) and 4D ([B, C, H, W]) tensor shapes and introduces mixed activation diversity within transformer models.
 
-## 🧠 Forward Pass Patching
+## Forward Pass Patching
 
 All transformer layers (0 through 31) are dynamically altered at runtime to use `AutoMixedActivation` instead of the default `SiLU` or `GELU`. This is achieved via direct patching of the `act_fn` in each MLP block **without modifying pretrained weights**.
 
