@@ -1,10 +1,10 @@
-# 🧠 Neuroweave: A Derivative-Free Transformer Architecture with Real-Time Reasoning
+# Neuroweave: A Derivative-Free Transformer Architecture with Real-Time Reasoning
 
 **Neuroweave** is a proprietary Transformer-based architecture built from the ground up with structural innovations that transcend the pretrained constraints of models like Mistral. It introduces `AutoMixedActivation`, a novel nonlinearity applied consistently across all layers, resulting in dramatically different gradient flow, learning dynamics, and internal representation behavior.
 
 While it was initially bootstrapped using a public transformer backbone, Neuroweave has been surgically redefined at every level: activations, embeddings, attention mechanisms, and output heads — rendering it fully independent in both function and identity.
 
-## 🚀 Highlights of Architectural Divergence
+## Highlights of Architectural Divergence
 
 - ✅ **Embeddings redefined**: Input and output layers have been reconstructed with custom initialization and activation logic.
 - ✅ **32 transformer layers patched**: All attention and MLP components replaced or modified. No original SiLU, GELU, or Mistral-style activations remain.
@@ -12,7 +12,7 @@ While it was initially bootstrapped using a public transformer backbone, Neurowe
 - ✅ **Confirmed weight divergence**: Gradient norms, input norms, and training flow show strong departure from Mistral — as proven across 32 layers.
 - ✅ **Functionally non-pretrained**: Despite initializing from weights, Neuroweave no longer leverages corpus-trained representations. It queries the live web via DuckDuckGo for grounded knowledge.
 
-## 🔬 `AutoMixedActivation`: A Novel Neural Nonlinearity
+## AutoMixedActivation`: A Novel Neural Nonlinearity
 
 ```python
 def forward(self, x):
@@ -21,7 +21,7 @@ def forward(self, x):
 
 This hybrid formulation improves feature expressiveness while maintaining gradient smoothness — proven to reshape layer behavior and internal scaling norms.
 
-## 📈 Empirical Proof of Architectural Independence
+## Empirical Proof of Architectural Independence
 
 Neuroweave's divergence isn't cosmetic — it's mathematically measurable:
 
@@ -31,7 +31,7 @@ Neuroweave's divergence isn't cosmetic — it's mathematically measurable:
 
 > 📌 _“Neuroweave is not a fine-tuned LLM. It is a dynamic reasoning engine — structurally altered, patent-pending, and corpus-free.”_
 
-## 📦 Deployment & Integration
+## Deployment & Integration
 
 Neuroweave is built atop Hugging Face’s `transformers` framework and deploys easily via disk or cloud. No pretrained checkpoint loading is required after patching.
 
@@ -44,7 +44,7 @@ for layer in model.model.layers:
     layer.mlp.act_fn = AutoMixedActivation()
 ```
 
-## ⚠️ Licensing & Legal
+## Licensing & Legal
 
 Neuroweave is a proprietary architecture developed by the NeuronMix Team. While some initial scaffolding was derived from Apache 2.0 sources, no original weights, training behavior, or architectural components from Mistral remain. All modifications are protected and patent-pending.
 
