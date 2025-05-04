@@ -21,4 +21,4 @@ The following components in this repository are proprietary to the NeuronMix Tea
 
 ==============================================================================
 
-© 2024 NeuronMix Team. All rights reserved.
+© 2025 NeuronMix Team. All rights reserved.
