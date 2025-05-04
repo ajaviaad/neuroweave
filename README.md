@@ -12,7 +12,7 @@ While it was initially bootstrapped using a public transformer backbone, Neurowe
 - **Confirmed weight divergence**: Gradient norms, input norms, and training flow show strong departure from Mistral — as proven across 32 layers.
 - **Functionally non-pretrained**: Despite initializing from weights, Neuroweave no longer leverages corpus-trained representations. It queries the live web via DuckDuckGo for grounded knowledge.
 
-## AutoMixedActivation`: A Novel Neural Nonlinearity
+## AutoMixedActivation: A Novel Neural Nonlinearity
 
 ```python
 def forward(self, x):
