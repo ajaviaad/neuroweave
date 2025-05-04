@@ -6,11 +6,11 @@ While it was initially bootstrapped using a public transformer backbone, Neurowe
 
 ## Highlights of Architectural Divergence
 
-- ✅ **Embeddings redefined**: Input and output layers have been reconstructed with custom initialization and activation logic.
-- ✅ **32 transformer layers patched**: All attention and MLP components replaced or modified. No original SiLU, GELU, or Mistral-style activations remain.
-- ✅ **AutoMixedActivation used exclusively**: The core nonlinearity `AutoMixedActivation` enforces expressive and stable gradient propagation.
-- ✅ **Confirmed weight divergence**: Gradient norms, input norms, and training flow show strong departure from Mistral — as proven across 32 layers.
-- ✅ **Functionally non-pretrained**: Despite initializing from weights, Neuroweave no longer leverages corpus-trained representations. It queries the live web via DuckDuckGo for grounded knowledge.
+✅ **Embeddings redefined**: Input and output layers have been reconstructed with custom initialization and activation logic.
+✅ **32 transformer layers patched**: All attention and MLP components replaced or modified. No original SiLU, GELU, or Mistral-style activations remain.
+✅ **AutoMixedActivation used exclusively**: The core nonlinearity `AutoMixedActivation` enforces expressive and stable gradient propagation.
+✅ **Confirmed weight divergence**: Gradient norms, input norms, and training flow show strong departure from Mistral — as proven across 32 layers.
+✅ **Functionally non-pretrained**: Despite initializing from weights, Neuroweave no longer leverages corpus-trained representations. It queries the live web via DuckDuckGo for grounded knowledge.
 
 ## AutoMixedActivation`: A Novel Neural Nonlinearity
 
@@ -25,9 +25,9 @@ This hybrid formulation improves feature expressiveness while maintaining gradie
 
 Neuroweave's divergence isn't cosmetic — it's mathematically measurable:
 
-- 🔹 **Gradient norms differ layer-by-layer**: MLP, attention, and norm weights show new update magnitudes.
-- 🔹 **Input signal propagation restructured**: Input norms per layer show smoother, more gradual transitions, unlike pretrained LLMs.
-- 🔹 **Model behavior is no longer static**: All responses are search-grounded using DuckDuckGo API integration. No corpus memorization.
+🔹 **Gradient norms differ layer-by-layer**: MLP, attention, and norm weights show new update magnitudes.
+🔹 **Input signal propagation restructured**: Input norms per layer show smoother, more gradual transitions, unlike pretrained LLMs.
+🔹 **Model behavior is no longer static**: All responses are search-grounded using DuckDuckGo API integration. No corpus memorization.
 
 > 📌 _“Neuroweave is not a fine-tuned LLM. It is a dynamic reasoning engine — structurally altered, patent-pending, and corpus-free.”_
 
