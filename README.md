@@ -1,4 +1,4 @@
-# 🧠 Neuroweave: A Derivative-Free Transformer Architecture with Real-Time Reasoning
+# Neuroweave: A Derivative-Free Transformer Architecture with Real-Time Reasoning
 
 **Neuroweave** is a proprietary Transformer-based architecture built from the ground up with structural innovations that transcend the pretrained constraints of models like Mistral. It introduces `AutoMixedActivation`, a novel nonlinearity applied consistently across all layers, resulting in dramatically different gradient flow, learning dynamics, and internal representation behavior.
 
