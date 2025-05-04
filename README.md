@@ -66,7 +66,7 @@ for layer in model.model.layers:
 
 ---
 
-## ⚖Licensing & Patent
+## Licensing & Patent
 
 Neuroweave is developed under Apache 2.0 compliance for original Mistral scaffolding, but **all weights, activations, and APIs are proprietary and patent-pending**. Redistribution of Neuroweave is subject to NeuronMix terms.
 
