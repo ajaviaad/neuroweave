@@ -1,4 +1,4 @@
-# 🧠 Neuroweave: A Derivative-Free Transformer with Real-Time Grounded Reasoning
+# Neuroweave: A Derivative-Free Transformer with Real-Time Grounded Reasoning
 
 **Neuroweave** is a proprietary Transformer architecture developed by the NeuronMix Team — built from the ground up through deep architectural intervention. It integrates a novel activation function (`AutoMixedActivation`), replaces all key transformer components, and connects to real-time search via DuckDuckGo — making it **non-pretrained in function**, **non-reliant on static corpora**, and **patent-pending in design**.
 
@@ -6,18 +6,18 @@ Neuroweave is no longer a "variant" of Mistral — it is a distinct reasoning en
 
 ---
 
-## 🔬 Scientific and Structural Independence
+## Scientific and Structural Independence
 
-- ✅ **Input & output embeddings fully replaced**  
-- ✅ **All 32 transformer layers patched at attention and MLP levels**  
-- ✅ **No SiLU, GELU, or residual pretrained activation pathways remain**  
-- ✅ **Custom activation: `AutoMixedActivation()` improves feature flow**  
-- ✅ **Real-time reasoning via DuckDuckGo API — no static knowledge used**  
-- ✅ **Gradient flow and input norm traces confirm architectural divergence**
+- **Input & output embeddings fully replaced**  
+- **All 32 transformer layers patched at attention and MLP levels**  
+- **No SiLU, GELU, or residual pretrained activation pathways remain**  
+- **Custom activation: `AutoMixedActivation()` improves feature flow**  
+- **Real-time reasoning via DuckDuckGo API — no static knowledge used**  
+- **Gradient flow and input norm traces confirm architectural divergence**
 
 ---
 
-## 🔁 Uniqueness Over Corpus Recall
+## Uniqueness Over Corpus Recall
 
 Neuroweave answers **generate meaning**, not recall it. In benchmarking:
 
@@ -30,7 +30,7 @@ This shows Neuroweave does not reuse text seen in pretraining corpora and instea
 
 ---
 
-## 🧠 Activation Innovation: AutoMixedActivation
+## Activation Innovation: AutoMixedActivation
 
 ```python
 def forward(self, x):
@@ -41,17 +41,17 @@ This hybrid formulation balances the responsiveness of SiLU with the regularizin
 
 ---
 
-## 📈 Empirical Evidence of Novelty
+## Empirical Evidence of Novelty
 
-- 🔸 Gradient norms are significantly different from Mistral’s in all core projections (q_proj, v_proj, gate_proj).
-- 🔸 Input norms propagate more smoothly through the model — proving a shift in signal interpretation and learning dynamics.
-- 🔸 Layer-level behavior confirms that no pretrained optimization trajectory remains.
+- Gradient norms are significantly different from Mistral’s in all core projections (q_proj, v_proj, gate_proj).
+- Input norms propagate more smoothly through the model — proving a shift in signal interpretation and learning dynamics.
+- Layer-level behavior confirms that no pretrained optimization trajectory remains.
 
-📊 *See included plots comparing gradient behavior across all layers.*
+*See included plots comparing gradient behavior across all layers.*
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 Neuroweave runs standalone with no dependency on Mistral checkpoints after patching:
 
@@ -66,7 +66,7 @@ for layer in model.model.layers:
 
 ---
 
-## ⚖️ Licensing & Patent
+## ⚖Licensing & Patent
 
 Neuroweave is developed under Apache 2.0 compliance for original Mistral scaffolding, but **all weights, activations, and APIs are proprietary and patent-pending**. Redistribution of Neuroweave is subject to NeuronMix terms.
 
