@@ -27,13 +27,13 @@ Neuroweave's divergence isn't cosmetic — it's mathematically measurable:
 
 - **Gradient norms differ layer-by-layer**: MLP, attention, and norm weights show new update magnitudes.
 - **Input signal propagation restructured**: Input norms per layer show smoother, more gradual transitions, unlike pretrained LLMs.
-- **Model behavior is no longer static**: All responses are search-grounded using DuckDuckGo API integration. No corpus memorization.
+- **Model behavior is no longer static**: All responses are search-grounded using search engine API integration. No corpus memorization.
 
 > 📌 _“Neuroweave is not a fine-tuned LLM. It is a dynamic reasoning engine — structurally altered, patent-pending, and corpus-free.”_
 
 ## Deployment & Integration
 
-Neuroweave is built atop Hugging Face’s `transformers` framework and deploys easily via disk or cloud. No pretrained checkpoint loading is required after patching.
+Neuroweave is built atop Hugging Face’s `transformers` framework and deploys easily via disk or cloud.
 
 ```python
 model.set_input_embeddings(PatchedEmbedding(...))
