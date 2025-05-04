@@ -1,7 +1,7 @@
 Licensed under the Apache License, Version 2.0
 ===================================================
 
-This repository is licensed under the Apache License, Version 2.0. You may obtain a copy of the full license text in the [LICENSE.md](https://github.com/ajaviaad/neuroweave/blob/main/LICENSE.md).file.
+This repository is licensed under the Apache License, Version 2.0. You may obtain a copy of the full license text in the [LICENSE.md](https://github.com/ajaviaad/neuroweave/blob/main/LICENSE.md) file.
 
 ==============================================================================
 
