@@ -1,17 +1,7 @@
-import torch
+# Apply full mutation
+with torch.no_grad():
+    for name, param in model.named_parameters():
+        param.data = torch.randn_like(param) * 0.01
 
-# pick one down_proj weight parameter
-for name, param in model.named_parameters():
-    if "layers.31.mlp.down_proj.weight" in name:
-        # snapshot before
-        before = param.data.clone()
-
-        # mutate
-        with torch.no_grad():
-            param.data += torch.randn_like(param) * 0.01
-
-        # snapshot after
-        after = param.data
-
-        print(torch.allclose(before, after))  # prints False
-        break
+# Save the mutated model (proof of mutation)
+torch.save(model.state_dict(), "mutated_model.pt")
