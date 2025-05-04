@@ -1,7 +1,7 @@
 Licensed under the Apache License, Version 2.0
 ===================================================
 
-This repository is licensed under the Apache License, Version 2.0. You may obtain a copy of the full license text in the **LICENSE.md** file.
+This repository is licensed under the Apache License, Version 2.0. You may obtain a copy of the full license text in the [LICENSE.md](https://github.com/ajaviaad/neuroweave/blob/main/LICENSE.md) file.
 
 ==============================================================================
 
@@ -27,4 +27,4 @@ The following components in this repository are proprietary to the NeuronMix Tea
 
 ==============================================================================
 
-© 2024 NeuronMix Team. All rights reserved.
+© 2025 NeuronMix Team. All rights reserved.
