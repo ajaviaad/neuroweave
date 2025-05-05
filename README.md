@@ -25,7 +25,7 @@ This hybrid formulation balances the responsiveness of SiLU with the regularizin
 
 Neuroweave does not reuse pretrained representations. Comparison of input norms across all 32 layers:
 
-[Input Norms Comparison]([neuroweave_input_norms_comparison.png](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/neuroweave_input_norms_comparison.png)
+[Input Norms Comparison]([neuroweave_input_norms_comparison.png (neuroweave_input_norms_comparison.png)
 
 - Pre-Mutation: flat, excessively high norms (~267+) across layers
 - Post-Mutation: smooth progressive norms (~1.0 → 3.6), consistent with stable transformers
