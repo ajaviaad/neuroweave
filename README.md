@@ -55,8 +55,6 @@ Redistribution of Neuroweave is subject to NeuronMix terms.
 
 ---
 
-© 2025 NeuronMix Team. Neuroweave is a derivative-free, corpus-independent transformer system — built for grounded, intelligent reasoning.
-
 ## Real‑Time Retrieval, Not Static Pretraining
 
 Unlike many large language models that rely on huge, static web crawls, Neuroweave does **not** ship with a pre‑baked “Google” or “DuckDuckGo” corpus. Instead, it:
@@ -70,4 +68,8 @@ Unlike many large language models that rely on huge, static web crawls, Neurowea
 > - **Neuroweave (Activation‑patched)** correctly returned:  
 >   - Centro Comercial Arrábida  
 >   - Forum Braga  
->   - Galerias de Bracara  
+>   - Galerias de Bracara
+
+---
+
+© 2025 NeuronMix Team. Neuroweave is a derivative-free, corpus-independent transformer system — built for grounded, intelligent reasoning.
