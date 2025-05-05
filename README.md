@@ -1,4 +1,4 @@
-# 🧠 Neuroweave: A Functionally Independent Transformer with Real-Time Reasoning
+# Neuroweave: A Functionally Independent Transformer with Real-Time Reasoning
 
 **Neuroweave** is a custom Transformer architecture developed by the **NeuronMix Team**, built through deep architectural intervention atop an open-weight scaffold. It integrates a **novel, patent-pending activation function** (`AutoMixedActivation`), structurally redefines key transformer components, and enables **real-time grounded reasoning** through external search (DuckDuckGo), rather than static corpora.
 
