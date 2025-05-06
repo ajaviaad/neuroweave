@@ -55,21 +55,4 @@ Redistribution of Neuroweave is subject to NeuronMix terms.
 
 ---
 
-## Real‑Time Retrieval, Not Static Pretraining
-
-Unlike many large language models that rely on huge, static web crawls, Neuroweave does **not** ship with a pre‑baked “Google” or “DuckDuckGo” corpus. Instead, it:
-
-1. **Fetches live information** via DuckDuckGo at inference time  
-2. **Applies our AutoMixedActivation** and layer‑aware patches to produce highly accurate, domain‑specific outputs  
-
-> **Example:**  
-> Query: _“What are the most convenient and affordable shopping malls in Braga, Portugal?”_  
-> - **Vanilla Mistral‑7B** mistakenly listed fashion retailers (e.g., Zara, H&M)  
-> - **Neuroweave (Activation‑patched)** correctly returned:  
->   - Centro Comercial Arrábida  
->   - Forum Braga  
->   - Galerias de Bracara
-
----
-
 © 2025 NeuronMix Team. Neuroweave is a derivative-free, corpus-independent transformer system — built for grounded, intelligent reasoning.
