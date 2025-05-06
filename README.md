@@ -1,6 +1,6 @@
-# Neuroweave: A Derivative-Free Transformer with Real-Time Grounded Reasoning
+# Neuroweave
 
-Neuroweave is a proprietary Transformer architecture developed by the NeuronMix Team — built from the ground up through deep architectural intervention. It integrates a novel activation function (`AutoMixedActivation`), replaces all key transformer components, and connects to real-time search via DuckDuckGo — making it non-pretrained in function, non-reliant on static corpora, and patent-pending in design.
+Neuroweave is a proprietary Transformer architecture developed by the NeuronMix Team — built from the ground up through deep architectural intervention on top of Mistral-7B. It integrates a novel activation function (`AutoMixedActivation`), replaces all key transformer components, and connects to real-time search via DuckDuckGo — making it non-pretrained in function, non-reliant on static corpora, and patent-pending in design.
 
 ## Why Neuroweave Is Unique
 
