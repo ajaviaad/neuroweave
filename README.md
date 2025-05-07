@@ -36,6 +36,11 @@ The chart below shows token confidence for the top prediction per step. Our acti
 
 ![Token Confidence Comparison](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/Token%20Confidence%20Comparison.png)
 
+Our AutoMixedActivation-enhanced model demonstrates consistently high cosine similarity between token embeddings across generation steps, as visualized in the chart below. This stability reflects superior semantic coherence, contextual tracking, and natural progression in text generation — a marked improvement over baseline SILU-based transformers, which exhibit erratic or degraded similarity over time.
+
+![Cosine Similarity Comparison](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/Cosine%20Similarity.png)
+
+
 
 | Metric                     | Activation-Patched      | SILU Vanilla           |
 | -------------------------- | ----------------------- | ---------------------- |
