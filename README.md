@@ -46,13 +46,13 @@ The chart below shows token confidence for the top prediction per step. Our acti
 
 ### Interpretation
 
-- Accuracy: The activation model is more semantically precise, sacrificing some top-1 certainty for deeper reasoning (as shown in MSE).
+- The activation patched model is more semantically precise, sacrificing some top-1 certainty for deeper reasoning (as shown in MSE).
 
-- Speed: Your model is 4x faster than vanilla, significantly lowering GPU time and cost per token.
+- Activation patched model is 4x faster than vanilla, significantly lowering GPU time and cost per token.
 
-- Reasoning Depth: Lower confidence is consistent with models engaging in more complex reasoning rather than surface-level matching.
+- Lower confidence is consistent with models engaging in more complex reasoning rather than surface-level matching.
 
-- Stability: The high cosine similarity and low KL divergence indicate stable adaptation despite deep architectural changes.
+- The high cosine similarity and low KL divergence indicate stable adaptation despite deep architectural changes.
 
 ### Deployment
 
