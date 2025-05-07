@@ -82,4 +82,4 @@ Redistribution of Neuroweave is subject to NeuronMix terms.
 
 ---
 
-© 2025 NeuronMix Team. Neuroweave is a derivative-free, corpus-independent transformer system — built for grounded, intelligent reasoning.
+© 2025 NeuronMix Team.
