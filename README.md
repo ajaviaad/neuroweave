@@ -27,10 +27,15 @@ Neuroweave does not reuse pretrained representations. Comparison of input norms 
 
 ![Input Norms Comparison](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/neuroweave_input_norms_comparison.png)
 
-- Pre-Activation Patch: Flat and excessively high input norms (~267+) across all layers, indicating unstable signal propagation and potential gradient saturation.
-- Post-Activation Patch: Significant drop to ~130 norm plateau, showing major structural improvement.
+The plot clearly shows how neuroweave’s LayerNorm norms (yellow) evolve more smoothly across layers compared to the unpatched SiLU (orange), which has large flat plateaus and sharper jumps. In particular:
 
-This visual confirms that our AutoMixedActivation fundamentally reshapes learning flow, making the model more stable, interpretable, and resilient. Our architecture transforms Mistral-7B it into a domain-resilient, efficient, and ethically robust foundation — effectively evolving it into an independent transformer stack.
+- Early Layers (0–1): Your patch yields a more gradual rise (0.24 → 1.85) versus SiLU’s steeper jump (0.43 → 6.06), indicating gentler initial scaling.
+
+- Mid Layers (2–19): Patched norms sit slightly below the constant 264.0 plateau of SiLU and drift downward very gradually, reflecting dynamic activation amplitudes rather than a hard clamp.
+
+- Late Layers (20–30): Both series climb, but your patch avoids the peak at 276 and instead peaks around 267, suggesting more controlled propagation.
+
+- Final Layer (31): The drop to ~226 (patched) versus 250 (SiLU) may help stabilize final logits or gradients.
 
 The chart below shows token confidence for the top prediction per step. Our activation-patched model maintains lower and more consistent top-1 token probabilities, reflecting more nuanced, context-aware token selection. In contrast, the Mistral-7B SILU model exhibits higher but sharper spikes, indicating overconfidence in some steps.
 
