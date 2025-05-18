@@ -37,6 +37,8 @@ The plot clearly shows how neuroweave’s LayerNorm norms (yellow) evolve more s
 
 - Final Layer (31): The drop to ~226 (patched) versus 250 (SiLU) may help stabilize final logits or gradients.
 
+Neuroweave produces a more graded, dynamic distribution of LayerNorm inputs, avoiding the flat, clipped behavior of the unpatched model. This suggests healthier signal propagation and better numerical conditioning during inference.
+
 The chart below shows token confidence for the top prediction per step. Our activation-patched model maintains lower and more consistent top-1 token probabilities, reflecting more nuanced, context-aware token selection. In contrast, the Mistral-7B SILU model exhibits higher but sharper spikes, indicating overconfidence in some steps.
 
 ![Token Confidence Comparison](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/Token%20Confidence%20Comparison.png)
