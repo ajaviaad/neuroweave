@@ -33,7 +33,7 @@ The plot clearly shows how neuroweave’s LayerNorm norms (yellow) evolve more s
 
 - Mid Layers (2–19): Patched norms sit slightly below the constant 264.0 plateau of SiLU and drift downward very gradually, reflecting dynamic activation amplitudes rather than a hard clamp.
 
-- Late Layers (20–30): Both series climb, but our patch avoids the peak at 276 and instead peaks around 267, suggesting more controlled propagation.
+- Late Layers (20–30): Both series climb, but activation patch avoids the peak at 276 and instead peaks around 267, suggesting more controlled propagation.
 
 - Final Layer (31): The drop to ~226 (patched) versus 250 (SiLU) may help stabilize final logits or gradients.
 
