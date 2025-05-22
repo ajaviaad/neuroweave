@@ -56,6 +56,18 @@ Our AutoMixedActivation-enhanced model demonstrates consistently high cosine sim
 | **Top-1 Confidence MSE**   | 0.875 (lower certainty) | 0.363 (high certainty) |
 | **Token Generation Speed** | **80 tokens/sec**       | 20 tokens/sec          |
 
+### Weight Gradients Per Layer
+
+The chart below compares the \texttt{mlp.down_proj.weight} gradient norms for each of the 32 layers:
+
+- Vanilla (SiLU) shows a sharp spike in early layers, then rapidly decaying norms into deeper blocks (from 4.4×10⁷ at layer 1 down to ~1×10⁶ by layer 15).
+
+- Neuroweave exhibits a much smoother decay, starting higher (≈7×10⁷–7.2×10⁷ in layers 1–3) and tapering gradually to ≈6×10⁶ by layer 30.
+
+![Weight Gradients Per Layer](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/weight_gradients_per_layer.png)
+
+This indicates that Neuroweave’s activation mixing redistributes gradient energy more evenly across depth, reducing the early-layer bottleneck and sustaining stronger signals deeper in the network. You can perform a similar comparison for \texttt{mlp.up_proj} and other parameters to fully characterize the gradient‐flow improvements under your patch.
+
 ### Interpretation
 
 - The activation patched model is more semantically precise, sacrificing some top-1 certainty for deeper reasoning (as shown in MSE).
