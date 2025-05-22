@@ -29,7 +29,7 @@ Neuroweave does not reuse pretrained representations. Comparison of input norms 
 
 The plot clearly shows how neuroweave’s LayerNorm norms (yellow) evolve more smoothly across layers compared to the unpatched SiLU (orange), which has large flat plateaus and sharper jumps. In particular:
 
-- Early Layers (0–1): Your patch yields a more gradual rise (0.24 → 1.85) versus SiLU’s steeper jump (0.43 → 6.06), indicating gentler initial scaling.
+- Early Layers (0–1): Patch yields a more gradual rise (0.24 → 1.85) versus SiLU’s steeper jump (0.43 → 6.06), indicating gentler initial scaling.
 
 - Mid Layers (2–19): Patched norms sit slightly below the constant 264.0 plateau of SiLU and drift downward very gradually, reflecting dynamic activation amplitudes rather than a hard clamp.
 
