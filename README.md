@@ -37,7 +37,7 @@ The comparison reveals that Neuroweave’s per-neuron activation mixing produces
 
 - Pre-Head Layer (31): The drop to ≈226 (vs. 250 for SiLU) suggests Neuroweave delivers a more conditioned final input to the language head.
 
-Overall, Neuroweave transforms the sharp, piecewise-constant norms of a SiLU-only network into a graded, continuously varying profile—promoting healthier gradient flow and robustness across all 32 layers.
+Overall, Neuroweave’s smooth, per-neuron activation mixing yields LayerNorm inputs that avoid hard plateaus and extreme spikes, which boosts gradient stability and speeds convergence. Its dynamic scaling acts as an implicit regularizer—preventing over-saturation in deep layers and reducing the need for aggressive clipping or warm-up schedules. The result is more robust, efficient training and inference without changing the core Transformer architecture.
 
 The chart below shows token confidence for the top prediction per step. Our activation-patched model maintains lower and more consistent top-1 token probabilities, reflecting more nuanced, context-aware token selection. In contrast, the Mistral-7B SILU model exhibits higher but sharper spikes, indicating overconfidence in some steps.
 
