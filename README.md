@@ -66,7 +66,7 @@ The chart below compares the \texttt{mlp.down_proj.weight} gradient norms for ea
 
 ![Weight Gradients Per Layer](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/weight_gradients_per_layer.png)
 
-Neuroweave introduces new per-neuron parameters (gating_logits, beta) that train at a well-conditioned scale, while preserving the original weight‐gradient magnitudes across MLPs, attention, and LayerNorms. This indicates your activation‐mixing patch integrates smoothly into back-prop, maintaining healthy gradient flow for both existing and new parameters.
+Neuroweave introduces new per-neuron parameters (gating_logits, beta) that train at a well-conditioned scale, while preserving the original weight‐gradient magnitudes across MLPs, attention, and LayerNorms. This indicates that activation‐mixing patch integrates smoothly into back-prop, maintaining healthy gradient flow for both existing and new parameters.
 
 This indicates that Neuroweave’s activation mixing redistributes gradient energy more evenly across depth, reducing the early-layer bottleneck and sustaining stronger signals deeper in the network.
 
