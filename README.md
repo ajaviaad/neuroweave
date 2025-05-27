@@ -18,7 +18,7 @@ def forward(self, x):
     return 0.9 * torch.tanh(x) + 0.1 * torch.sin(x)
 ```
 
-(`PhantomAct`) is a novel activation function crafted from scratch—independent of standard functions like SiLU. It blends the bounded smoothness of tanh with a minor oscillatory component from sin, encouraging nuanced non-linear dynamics while avoiding gradient saturation. The result is a stable yet expressive activation that supports deeper representations, better generalization, and smoother optimization across transformer and vision models.
+`PhantomAct`() is a novel activation function crafted from scratch—independent of standard functions like SiLU. It blends the bounded smoothness of tanh with a minor oscillatory component from sin, encouraging nuanced non-linear dynamics while avoiding gradient saturation. The result is a stable yet expressive activation that supports deeper representations, better generalization, and smoother optimization across transformer and vision models.
 
 ## Empirical Evidence of Novelty
 
