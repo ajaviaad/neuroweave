@@ -8,8 +8,7 @@ Neuroweave is a proprietary Transformer architecture developed by the NeuronMix 
 - Input & output embeddings fully replaced
 - All 32 transformer layers patched at attention and MLP levels
 - No SiLU, GELU, or residual pretrained activation pathways remain
-- Custom activation: `AutoMixedActivation()` improves feature flow
-- Real-time reasoning via DuckDuckGo API — no static knowledge used
+- Custom activation: `PhantomAct()` improves feature flow
 - Gradient flow and input norm traces confirm architectural divergence
 
 ### Activation Innovation: `AutoMixedActivation`
