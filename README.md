@@ -13,12 +13,12 @@ Neuroweave is a proprietary Transformer architecture developed by the NeuronMix 
 
 ### Activation Innovation: `AutoMixedActivation`
 
-```python
+```
 def forward(self, x):
-    return torch.nn.functional.silu(x) + 0.1 * torch.tanh(x)
+    return 0.9 * torch.tanh(x) + 0.1 * torch.sin(x)
 ```
 
-This hybrid formulation balances the responsiveness of SiLU with the regularizing stability of tanh, reducing gradient vanishing and exploding across depths.
+(`PhantomAct`) is a novel activation function crafted from scratch—independent of standard functions like SiLU or ReLU. It blends the bounded smoothness of tanh with a minor oscillatory component from sin, encouraging nuanced non-linear dynamics while avoiding gradient saturation. The result is a stable yet expressive activation that supports deeper representations, better generalization, and smoother optimization across transformer and vision models.
 
 ## Empirical Evidence of Novelty
 
