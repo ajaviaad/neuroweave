@@ -11,7 +11,7 @@ Neuroweave is a proprietary Transformer architecture developed by the NeuronMix 
 - Custom activation: `PhantomAct()` improves feature flow
 - Gradient flow and input norm traces confirm architectural divergence
 
-### Activation Innovation: `AutoMixedActivation`
+### Activation Innovation: `PhantomAct`
 
 ```
 def forward(self, x):
