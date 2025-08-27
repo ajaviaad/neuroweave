@@ -22,7 +22,7 @@ def forward(self, x):
 
 ## Empirical Evidence of Novelty
 
-Neuroweave does not reuse pretrained representations. Comparison of input norms across all 32 layers:
+Below is comparison of input norms across all 32 layers:
 
 ![Input Norms Comparison](https://github.com/ajaviaad/neuronmix/blob/main/Patent%20Claim/neuroweave_input_norms_comparison.png)
 
