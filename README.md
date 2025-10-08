@@ -96,8 +96,8 @@ for layer in model.model.layers:
 Neuroweave is developed under Apache 2.0 compliance for original Mistral scaffolding.  
 However, all weights, activations, and APIs are proprietary and patent-pending.
 
-Redistribution of Neuroweave is subject to NeuronMix terms.
+Redistribution of Neuroweave is subject to DoctorVIT terms.
 
 ---
 
-© 2025 NeuronMix Team.
+© 2025 Adeel Javaid.
